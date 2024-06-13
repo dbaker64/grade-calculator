@@ -1,0 +1,108 @@
+:root {
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+#grade-display, #lowest-a {
+    background-color:cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+}
+
+#grades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.grade-container {
+    background-color: blue;
+    width: 700px;
+    height: 150px;
+    display: flex;
+    padding: 20px;
+}
+
+.value-container {
+    flex-grow: 3;
+    background-color: red;
+    display: flex;
+}
+
+.num-container, .den-container {
+    background-color: gray;
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.val-input {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.div-container {
+    flex-grow: 1;
+    background-color: violet;
+    text-align: center;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 72px;
+}
+
+.option-container {
+    flex-grow: 2;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.type-container {
+    background-color: lightblue;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.exempt-container {
+    background-color: lightcoral;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 10px;
+}
+
+.save-btn {
+    width: min-content;
+}

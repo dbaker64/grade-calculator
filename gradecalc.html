@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="gradecalc.css">
+</head>
+
+<body>
+    <h1>Grade Calculator</h1>
+    <dialog id="instructions-modal">
+        <p><em>
+            Welcome to the Grade Calculator!<br>
+            Please note, this calculator is specific to Enloe High School<br>
+            You must save your grade before adding another one, however, you may edit your grade once it is entered<br>
+            When entering your grade please insert the numerator of your grade in the left box and the denominator in the right box<br>
+            Checking the "AP" checkbox will convert your Major and Minor category weightings appropriately<br>
+            Your overall grade will update every time you click "save" in the grade dialog<br>
+            The "lowest possible" field will display the lowest possible grade you could get on the current assignment
+             and still recieve an A<br>
+            Please do not enter Major/Minor grades and Quarter/Final Grades at the same time
+        </em></p>
+        <form id="dialog-form" method="dialog">
+            <button form="dialog-form">Hide Instructions</button>
+        </form>
+    </dialog>
+    <div id="header">
+        <button id="show-instructions">Show Instructions</button>
+        <button id="new-grade-btn">Add New Grade</button>
+        <form>
+            <input type="checkbox" id="ap" onclick="isAPClass()">
+            <label for="ap">AP</label>
+        </form>
+        <div>
+            <div id="grade-display"><em>___.__%</em></div>
+            <p>Overall Grade</p>
+        </div>
+        <div>
+            <div id="lowest-a"><em>___.__%</em></div>
+            <p>Lowest Possible</p>
+        </div>
+    </div>
+    <div id="grades-container"></div>
+    <script src="gradecalc.js"></script>
+</body>
+
+</html>
